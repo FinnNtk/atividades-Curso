@@ -1,0 +1,10 @@
+programa {
+  funcao inicio() {
+    real a, b , area
+    a=3.14
+    b=4
+    escreva("A area do circulo cujo o raio mede 4. Qual e a area do circulo? ")
+    area= a*b*b
+    escreva(" A area e ",area,"\n")
+  }
+}
