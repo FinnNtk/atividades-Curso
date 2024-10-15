@@ -1,0 +1,15 @@
+programa {
+  funcao inicio() {
+    inteiro a, b, resultado
+
+escreva("Digite um numeros:")
+leia(a)
+escreva("digite outro numero:")
+leia(b)
+resultado=a+b
+escreva(resultado)
+escreva("\n")
+
+
+  }
+}
