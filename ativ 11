@@ -1,0 +1,21 @@
+programa {
+  funcao inicio() {
+inteiro numero, contador, divisores
+divisores=0
+
+escreva("digite um numero:")
+leia(numero)
+
+para (contador = 1; contador <= numero; contador++) {
+  se(numero % contador == 0) {
+    divisores = divisores + 1
+  }
+}
+
+se(divisores == 2 ){
+  escreva("O numero", numero, " é primo. \n")
+ } senao {
+  escreva("O numero ", numero , " não é primo. \n")
+ }
+  }
+}
