@@ -1,0 +1,13 @@
+programa {
+  funcao inicio() {
+    inteiro num, contador, soma
+escreva("Digite um numero: \n")
+leia(num)
+
+    soma=0
+para(contador=1; contador<=num;contador++){
+  soma=soma+contador
+}
+escreva(num, " + ", contador, " = ", soma)
+  }
+}
