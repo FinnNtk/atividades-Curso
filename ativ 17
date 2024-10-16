@@ -1,0 +1,19 @@
+programa {
+  funcao inicio() {
+    inteiro a, b, maior, mmc
+
+    escreva("DIgite o primeiro numero: ")
+    leia(a)
+    escreva("Digirw o segundo numero: ")
+    leia(b)
+    maior= a
+    se(b>a){
+      maior=b
+    }
+    mmc= maior
+  enquanto(mmc%a !=0  ou  mmc%b !=0){
+    mmc= mmc + maior
+  }
+  escreva("O mmc é , ", mmc ,"\n")
+  }
+}
