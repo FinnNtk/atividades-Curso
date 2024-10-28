@@ -1,0 +1,4 @@
+name="Pedro Henrique"
+age="17 anos"
+
+print("seu nome é", name, "e sua idade é", age)
