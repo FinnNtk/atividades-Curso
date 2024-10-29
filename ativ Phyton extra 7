@@ -1,0 +1,5 @@
+cel=float(input("Digite a temperatura em celsius:"))
+kelvin= cel+274
+fall = (cel*9/5)+32
+
+print('\n' 'Temperatura em celsius:', cel , '\n' 'Temperatura em kelvin:',kelvin,'\n','Temperatura em fal:', fall)
