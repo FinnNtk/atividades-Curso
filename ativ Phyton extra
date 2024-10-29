@@ -1,0 +1,7 @@
+Nome= input('Digite o nome do funcionario:')
+salario=float(input('Digite o salario do funcionario:'))
+INSS=(salario*10)/100
+VT=(salario*6)/10
+salario_liquido=salario-VT-INSS
+
+print('\n' 'Nome:',Nome,'\n' 'Salario bruto:',salario,'\n' 'INSS:',INSS,'\n' 'VT:',VT,'\n' 'Salario liquido:', salario_liquido)
