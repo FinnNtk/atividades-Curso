@@ -1,0 +1,8 @@
+nome = input('Digite seu nome:')
+idade =int(input('Digite a sua idade:'))
+if idade >=18:
+    print('O seu voto é obrigatorio')
+elif idade ==17 or idade >=71:
+    print('O seu voto é facultativo')
+else:
+    print('O seu voto não é obrigatorio')
