@@ -1,3 +1,4 @@
+
 numero = int(input('Digite um numero para fazer a tabuada:'))
 
 tabu0 =numero*0
@@ -12,15 +13,14 @@ tabu8 =numero*8
 tabu9 =numero*9
 tabu10 =numero*10
 
-print(f'{numero} x 1 = {tabu0})
-print(f'{numero} x 2 = {tabu1})
-print(f'{numero} x 3 = {tabu2})
-print(f'{numero} x 4 = {tabu3})
-print(f'{numero} x 5 = {tabu4})
-print(f'{numero} x 6 = {tabu5})
-print(f'{numero} x 7 = {tabu6})
-print(f'{numero} x 8 = {tabu7})
-print(f'{numero} x 9 = {tabu8})
-print(f'{numero} x 9 = {tabu9})
-print(f'{numero} x 10 = {tabu10})
-print(f'{numero} x 0 = {tabu1})
+print(f'{numero} x 0 = {tabu0}')
+print(f'{numero} x 1 = {tabu1}')
+print(f'{numero} x 2 = {tabu2}')
+print(f'{numero} x 3 = {tabu3}')
+print(f'{numero} x 4 = {tabu4}')
+print(f'{numero} x 5 = {tabu5}')
+print(f'{numero} x 6 = {tabu6}')
+print(f'{numero} x 7 = {tabu7}')
+print(f'{numero} x 8 = {tabu8}')
+print(f'{numero} x 9 = {tabu9}')
+print(f'{numero} x 10 = {tabu10}')
