@@ -1,0 +1,26 @@
+numero = int(input('Digite um numero para fazer a tabuada:'))
+
+tabu0 =numero*0
+tabu1 =numero*1
+tabu2 =numero*2
+tabu3 =numero*3
+tabu4 =numero*4
+tabu5 =numero*5
+tabu6 =numero*6
+tabu7 =numero*7
+tabu8 =numero*8
+tabu9 =numero*9
+tabu10 =numero*10
+
+print(f'{numero} x 1 = {tabu0})
+print(f'{numero} x 2 = {tabu1})
+print(f'{numero} x 3 = {tabu2})
+print(f'{numero} x 4 = {tabu3})
+print(f'{numero} x 5 = {tabu4})
+print(f'{numero} x 6 = {tabu5})
+print(f'{numero} x 7 = {tabu6})
+print(f'{numero} x 8 = {tabu7})
+print(f'{numero} x 9 = {tabu8})
+print(f'{numero} x 9 = {tabu9})
+print(f'{numero} x 10 = {tabu10})
+print(f'{numero} x 0 = {tabu1})
