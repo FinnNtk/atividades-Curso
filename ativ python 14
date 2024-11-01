@@ -2,33 +2,36 @@ nome = input("Digite o nome do funcionario:")
 salario_bruto = float(input("Digite o salario do funcionario:"))
 VT = (salario_bruto*6)/100
 INSS=0 
-IR=0
-salario_liquido = salario_bruto - IR - VT
+
+
 
 if salario_bruto <=1412.00:
         INSS = (salario_bruto*7.5)/100
 
-elif salario_bruto >=2259.21 and salario_bruto<=2836.65:
-        IR = (salario_bruto*7.5)/100
-
 elif salario_bruto >=1412.01 and salario_bruto <= 2666.68:
         INSS = (salario_bruto*9)/100 -21.18
-    
-elif salario_bruto >=2826.66 and salario_bruto <=3751.05:
-        IR = (salario_bruto*15)/100
 
 elif salario_bruto >=2666.69 and salario_bruto <= 4000.04:
         INSS = (salario_bruto*12)/100 -101.18
-    
-elif salario_bruto >=3751.06 and salario_bruto<=4664.68:
-        IR = (salario_bruto*15)/100 
 
 elif salario_bruto >=4000.03 and salario_bruto <= 7786.02:
         INSS = (salario_bruto*14)/100 -181.18
-    
-elif salario_bruto >=4664.69:
-        IR = (salario_bruto*27.5)/100    
 
+
+if salario_bruto <=2112.00:
+    IR=0
+elif salario_bruto >=4664.69:
+        IR = (salario_bruto*27.5)/100
+elif salario_bruto >=3751.06 and salario_bruto<=4664.68:
+        IR = (salario_bruto*15)/100 
+elif salario_bruto >=2826.66 and salario_bruto <=3751.05:
+        IR = (salario_bruto*15)/100
+elif salario_bruto >=2259.21 and salario_bruto<=2836.65:
+        IR = (salario_bruto*7.5)/100
+
+
+
+salario_liquido = salario_bruto - IR - VT - INSS
 print()
 print('Funcionario:',nome)
 print('Salario Bruto:',salario_bruto)
