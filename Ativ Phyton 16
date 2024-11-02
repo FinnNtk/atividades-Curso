@@ -1,0 +1,37 @@
+nome=input('Digite o nome do funcionario:')
+salario= float(input('Digite o salario do funcionario:'))
+meta = float(input('Digite a meta adquirida:'))
+
+if meta>=50000 and salario <3000:
+    premiação= (salario*20)/100
+    final= premiação+salario
+    print('Nome do funcionario:',nome)
+    print('Salario:',salario) 
+    print('Meta atinginda:',meta)
+    print('Premição:',premiação)
+    print('Salario com a premiação:',final)
+
+elif meta>=50000 and salario >=3000 and salario <=5000:
+    premiação= (salario*10)/100
+    final= premiação+salario
+    print('Nome do funcionario:',nome)
+    print('Salario:',salario) 
+    print('Meta atinginda:',meta)
+    print('Premição:',premiação)
+    print('Salario com a premiação:',final)
+    
+elif meta>=50000 and salario >5000:
+    premiação= (salario*5)/100
+    final= premiação+salario
+    print('Nome do funcionario:',nome)
+    print('Salario:',salario) 
+    print('Meta atinginda:',meta)
+    print('Premição:',premiação)
+    print('Salario com a premiação:',final)
+    
+elif meta <50000:
+    print('Nome do funcionario:',nome)
+    print('Salario:',salario) 
+    print('Meta não atinginda:',meta)
+
+    
