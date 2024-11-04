@@ -1,0 +1,35 @@
+login=input()
+senha=int(input())
+print ("login:",login)
+print ('Senha:',senha)
+
+if login =="Admin" or senha == 123:
+    print("programa inicado:")
+    print()
+    nome = input('Digite o nome do produto:')
+    preço= float(input('Digite o preço do produto:'))
+    qte= float(input("digite a quantidade:"))
+    pagamento =input("Digite se a forma de pagamento seré no pix ou  no cartão apenas 1x ou 2x:")
+    
+    if pagamento =="pix":
+        vr=(preço*qte)-(preço*qte*10)/100
+        print('Nome do produto:',nome)    
+        print('Preço:',preço)
+        print("Quantidade:",qte)
+        print("Valor total:",vr)
+    elif pagamento =="cartão 1x":
+        vr=(preço*qte)
+        print('Nao havera desconto')
+        print('Nome do produto:',nome)    
+        print('Preço:',preço)
+        print("Quantidade:",qte)
+        print("Valor total:",vr)
+    elif pagamento =="cartão 2x":
+        vr=(preço*qte)-(preço*qte*5)/100
+        print('Nome do produto:',nome)    
+        print('Preço:',preço)
+        print("Quantidade:",qte)
+        print("Valor total:",vr)
+
+else:
+    print("programa encerrado")
