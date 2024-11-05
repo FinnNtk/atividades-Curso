@@ -1,0 +1,12 @@
+login=input("Login:")
+senha=(input('Senha:'))
+print()
+
+cadastros_login= input("Digete seu login: ")
+cadastros_senha= input("Digite sua senha: ")
+
+if cadastros_login == login and cadastros_senha == senha:
+    print('cadastros bem sucedido.')
+    
+else:
+    print("dados negados :")
