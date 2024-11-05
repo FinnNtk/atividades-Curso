@@ -1,0 +1,13 @@
+login=input("Login:")
+senha=(input('Senha:'))
+print()
+
+cadastros_login= input("Digete seu login: ")
+cadastros_senha= input("Digite sua senha: ")
+
+if cadastros_login == login and cadastros_senha == senha:
+    print("Digite dois numero para calcular a area de um triangulo:")
+    numero=int(input())
+    numero2=int(input())
+    area= (numero*numero2)/2
+    print("A area é: ",area)
