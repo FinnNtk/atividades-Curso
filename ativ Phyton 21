@@ -1,0 +1,11 @@
+nome= input('Digite o seu nome: ')
+idade= int(input('Digite a sua idade: '))
+
+if idade >=18 or idade ==70:
+    print("o seu voto é obrigatorio.")
+    
+elif idade ==16 or idade ==17 or idade >70:
+    print("o seu voto é facultativo.")
+
+elif idade <=15:
+    print('você não precisa votar.')
