@@ -1,0 +1,15 @@
+nome=input('Digite seu nome: ')
+
+while True:
+    print('o usuário deseja inserir um novo nome?')
+    resposta=input()
+    
+    if resposta =='sim':
+        nome=input('Digite seu nome. ')
+        continue
+
+    elif resposta =='nao':
+        break
+    else:
+        print('comando invalido, digite apenas  sim ou nao.')
+    
