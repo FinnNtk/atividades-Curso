@@ -1,0 +1,32 @@
+nome=input('Digite o nome do funcionario: ')
+tip_quarto=input('Qual é o tipo de quarto: ')
+dias= int(input('Quantos dias você vai ficar hospedador: '))
+pagamento=input('Qual a forma de pagamento')
+
+if tip_quarto=='solteiro' and pagamento=='pix':
+    diaria=dias*100
+    desconto=diaria*0.10
+    valorT=diaria
+    valorP=diaria-desconto
+    print('\n Nome do hospedador: ',nome,'\n Tipo de quarto: ',tip_quarto,'\n N° de dias: ',dias,'\n Valor tolar: ',valorT,'\n Desconto: ',desconto,'\n Valor a pagar: ',valorP)
+
+elif tip_quarto=='solteiro' and pagamento=='cartão':
+    diaria=dias*100
+    desconto='Nao ha desconto'
+    valorT=diaria
+    valorP=diaria-desconto
+    print('\n Nome do hospedador: ',nome,'\n Tipo de quarto: ',tip_quarto,'\n N° de dias: ',dias,'\n Valor tolar: ',valorT,'\n Desconto: ',desconto,'\n Valor a pagar: ',valorP)
+
+elif tip_quarto=='casal' and pagamento=='pix':
+    diaria=dias*170
+    desconto=diaria*0.10
+    valorT=diaria
+    valorP=diaria-desconto
+    print('\n Nome do hospedador: ',nome,'\n Tipo de quarto: ',tip_quarto,'\n N° de dias: ',dias,'\n Valor tolar: ',valorT,'\n Desconto: ',desconto,'\n Valor a pagar: ',valorP)
+
+elif tip_quarto=='casal' and pagamento=='cartão':
+    diaria=dias*100
+    desconto='Nao ha desconto'
+    valorT=diaria
+    valorP=diaria-desconto
+    print('\n Nome do hospedador: ',nome,'\n Tipo de quarto: ',tip_quarto,'\n N° de dias: ',dias,'\n Valor tolar: ',valorT,'\n Desconto: ',desconto,'\n Valor a pagar: ',valorP)
