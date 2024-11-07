@@ -1,0 +1,69 @@
+print('Bem vindo ao teste de ansiedade. ')
+print()
+nome=input('Digite seu nome para comerçarmos: ')
+idade=int(input('Digite sua idade: '))
+
+print()
+
+print('Ola',nome,', para iniciarmos você representara sua resposta em uma escala de 0 a 10, sendo 0 o menor e 10 o maior nivel de ansiedade')
+
+print()
+
+print ('01_ Em sua rotima você tem dificulade em se alcamar, em qualquer situação: ')
+resposta1=int(input())
+print()
+
+print('02_ Você possui tremedeiras constantes nas maõs ou nas pernas: ')
+resposta2=int(input())
+print()
+
+print('03_Você sente suor, calafrios ou ondas de calor  em qualquer lugar: ')
+resposta3=int(input())
+print()
+
+print('04_ Tive dificuldade em respirar em alguns momentos (ex. respiração ofegante, falta de ar, sem ter feito nenhum esforço físico): ')
+resposta4=int(input())
+print()
+
+print('05_ Você se sente que estar sempre nervoso: ')
+resposta5=int(input())
+print()
+
+print('06_ Você se sente agitado: ')
+resposta6=int(input())
+print()
+
+print('07_ Você acha difícil se relaxar : ')
+resposta7=int(input())
+print()
+
+print('08_ Você sente que seu coração esta alterado mesmo não tendo feito nenhum esforço físicos: ')
+resposta8=int(input())
+print()
+
+print('09_ Você se preocupa muito com diversas coisas: ')
+resposta9=int(input())
+print()
+
+print('10_ Você fica facilmente aborrecido(a) ou irritado(a): ')
+resposta10=int(input())
+print()
+
+print('11_ Você sente medo como se algo horrível fosse acontecer: ')
+resposta11=int(input())
+print()
+
+print('12_ Você tem dificuldade para trabalhar, estudar, tomar conta das coisas em casa ou se relacionar com as pessoas : ')
+resposta12=int(input())
+
+
+media=(resposta1+resposta2+resposta3+resposta4+resposta5+resposta6+resposta7+resposta8+resposta9+resposta10+resposta11+resposta12)/12
+
+if media >0 and media<=5:
+    print('Você nao tem ansiedade(sortudo)')
+elif media >5 and media<=7:
+    print("Você tem uma ansiedade razoavel(fique feliz são poucos como você)")
+elif media>7 and media<=10:
+    print('irmao sinto muito em lhe dizer a sua ansiedade e alto(tipo muito)')
+elif media>10:
+    print('Cara, procura ajuda pela amor de deus.')
