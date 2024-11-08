@@ -1,0 +1,30 @@
+num1= int(input('Digite o primeiro numero: '))
+num2= int(input('Digite o numero do expoente: '))
+
+pot=num1**num2
+
+print('A pontencia desse numero é: ',pot)
+print()
+
+while True:
+    print('o usuário deseja uma nova media ?')
+    resposta=input()
+    
+    if resposta =='sim':
+        
+        print()
+        num1= int(input('Digite o primeiro numero: '))
+        num2= int(input('Digite o numero do expoente: '))
+
+        pot=num1**num2
+
+        print('A pontencia desse numero é: ',pot)
+        print()
+        
+        continue
+
+    elif resposta =='nao':
+        break
+    else:
+        print()
+        print('comando invalido, digite apenas  sim ou nao.')
