@@ -1,0 +1,31 @@
+num1= int(input('Digite o primeiro numero: '))
+num2= int(input('Digite o segundo numero: '))
+num3= int(input('Digite o terceiro numero: '))
+
+media=(num1+num2+num3)/3 
+
+print('A media desses numeros é: ',media)
+print()
+
+while True:
+    print('o usuário deseja uma nova media ?')
+    resposta=input()
+    
+    if resposta =='sim':
+        
+        print()
+        num1= int(input('Digite o primeiro numero: '))
+        num2= int(input('Digite o segundo numero: '))
+        num3= int(input('Digite o terceiro numero: '))
+        
+        media=(num1+num2+num3)/3 
+        
+        print('A media desses numeros é: ',media)
+        print()
+        
+        continue
+
+    elif resposta =='nao':
+        break
+    else:
+        print('comando invalido, digite apenas  sim ou nao.')
