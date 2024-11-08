@@ -1,0 +1,17 @@
+produto=input('Digite qual o nome do produto: ')
+preço=float(input('informe o valor do produto: '))
+ICMS=float(input('Digite o valor do ICMS:'))
+
+ic=preço*ICMS/100
+pis=preço*0.0065
+cof=(preço*3)/100
+
+total=pis+cof+ICMS
+ 
+print()
+print('Nome do produto: ',produto)
+print('Valor: ',preço)
+print('ICMS: ', ic)
+print('PIS: ',pis)
+print('COFINS: ',cof)
+print("Total de impostos: ",total)
