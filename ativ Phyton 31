@@ -1,0 +1,20 @@
+nome1=input('Digite o nome do aluno para ser cadastrado: ')
+nota1=int(input('Digite sua nota: '))
+print()
+
+nome2=input('Digite o nome do aluno para ser cadastrado: ')
+nota2=int(input('Digite sua nota: '))
+print()
+
+nome3=input('Digite o nome do aluno para ser cadastrado: ')
+nota3=int(input('Digite sua nota: '))
+print()
+
+print('Aluno:', nome1)
+print('Nota:', nota1)
+ 
+print('Aluno:', nome2)
+print('Nota:', nota2)
+    
+print('Aluno:', nome3)
+print('Nota:', nota3)
