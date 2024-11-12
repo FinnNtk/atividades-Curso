@@ -1,0 +1,17 @@
+nome=input('Digite o nome do aluno para ser cadastrado: ') #declaração de variavel
+nota1=int(input('Digite sua primeira  nota: '))
+nota2=int(input('Digite sua segunda nota: '))
+nota3=int(input('Digite sua terceira nota: '))
+nota4=int(input('Digite sua quarta nota: '))
+
+nota_final=nota1+nota2+nota3+nota4 
+print()
+
+if nota_final >=60:
+    print('Parabens você saiu desse inferno chamado de escola ;) ')
+
+elif nota_final<40:
+    print('Se ferrou, vai continuar nesse hospício kkkk.')
+
+elif nota_final >=40 or nota_final<=59:
+    print('A recuperação e melhor do que ser reprovado.  ')
