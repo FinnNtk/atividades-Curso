@@ -1,0 +1,79 @@
+nome = input('Digite seu nome:')
+peso= float(input('Digite seu peso:'))
+altura = float(input('Digite sua altura:'))
+imc= peso/altura**2
+print()
+if imc <18.5:
+    print('Nome:',nome)
+    print('Peso:',peso)
+    print('Altura:',altura)
+    print('Voce esta abaixo do peso.')
+
+elif imc >=18.6 and imc <24.9:
+    print('Nome:',nome)
+    print('Peso:',peso)
+    print('Altura:',altura)    
+    print('Seu peso e normal.')
+        
+elif imc >=25 and imc <29.9:
+    print('Nome:',nome)
+    print('Peso:',peso)
+    print('Altura:',altura)
+    print('Voce esta sobrepeso.')
+        
+elif imc >=30 and imc <34.9:
+    print('Nome:',nome)
+    print('Peso:',peso)
+    print('Altura:',altura)
+    print('Voce esta em obsedade grau 1.')
+            
+elif imc >=35 and imc<39.9:
+    print('Nome:',nome)
+    print('Peso:',peso)
+    print('Altura:',altura)
+    print('Voce esta em obsedade grau 2.')
+        
+else:
+    print('Voce esta em obsedade grau 3.')
+print('Você deseja fazer outro?')
+
+resposta=input()
+while resposta=='sim' :  
+    nome = input('Digite seu nome:')
+    peso= float(input('Digite seu peso:'))
+    altura = float(input('Digite sua altura:'))
+    imc= peso/altura**2
+    print()
+    if imc <18.5:
+        print('Nome:',nome)
+        print('Peso:',peso)
+        print('Altura:',altura)
+        print('Voce esta abaixo do peso.')
+    
+    elif imc >=18.6 and imc <24.9:
+        print('Nome:',nome)
+        print('Peso:',peso)
+        print('Altura:',altura)    
+        print('Seu peso e normal.')
+        
+    elif imc >=25 and imc <29.9:
+        print('Nome:',nome)
+        print('Peso:',peso)
+        print('Altura:',altura)
+        print('Voce esta sobrepeso.')
+        
+    elif imc >=30 and imc <34.9:
+        print('Nome:',nome)
+        print('Peso:',peso)
+        print('Altura:',altura)
+        print('Voce esta em obsedade grau 1.')
+        
+    elif imc >=35 and imc<39.9:
+        print('Nome:',nome)
+        print('Peso:',peso)
+        print('Altura:',altura)
+        print('Voce esta em obsedade grau 2.')
+        
+    else:
+        print('Voce esta em obsedade grau 3.')
+    resposta=input('Deseja fazeer outro calcudo?')
