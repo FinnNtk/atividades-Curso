@@ -1,0 +1,20 @@
+pessoas=[]
+
+while True:
+    nome=input('digite seu nome: ')
+    idade=int(input('digite sua idade:'))
+    pessoas.append((nome,idade))
+    
+    if idade >=18 and idade <=70:
+        print('O seu voto é obrigatorio ;) ')
+    
+    elif idade ==17 or idade ==16 or idade >70:
+        print('O seu voto é facultativo. ')
+        
+    elif idade <16:
+        print('O seu voto não é obrigatorio.')
+        
+    continuar=input('Deseja fazer denovo ? (s/n)')
+    
+    if continuar !='s':
+        break
