@@ -1,0 +1,13 @@
+nomes=[]
+while True:
+    nome= input('Digite um nome:')
+   
+    nomes.append(nome)
+    continuar =input('Dejesa ccontinuar (s/n)?')
+    
+    if continuar!='s'and continuar=='n':
+        break
+    
+print('\nNomes e idades inseridos:')
+for nome in nomes:
+    print(nome)
