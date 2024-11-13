@@ -1,0 +1,18 @@
+login2='Adm'
+senha2=123
+
+
+while True:
+    login1=input('Digite seu login:')
+    senha1=int(input('Digite sua senha:'))
+    
+    if login1!=login2 or senha1!=senha2:
+        print('Login errado, informe novamente seus dados.')
+        
+    
+    elif login1==login2 and senha1==senha2:
+        nome=input('Informe seu nome.')
+        salario=float(input('Informe seu salario.'))
+        reajuste=salario*0.10
+        salario_novo=salario+reajuste
+    
