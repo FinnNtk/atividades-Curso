@@ -1,0 +1,15 @@
+cadastros=[]
+#cadastros é onde vai ser guardado a senha e o login
+while True:
+    login=input('digite um nome para ser feito o cadastro: ')
+    senha=int(input('Digite uma senha para ser cadastrada: '))
+    cadastros.append((login,senha)) #append: e igual à adicionar
+    
+    continuar=input('Deseja fazer um novo cadastro ? (s/n)')
+    
+    if continuar !='s' and continuar =='n':
+        break
+        # finaliza o codico
+print('\nLogin e senha inseridos: ')
+for cadastro in cadastros:
+    print(cadastro[0], cadastro[1])
