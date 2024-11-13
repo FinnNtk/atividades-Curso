@@ -1,0 +1,30 @@
+while True:
+    
+    print('Qual calculo você deseja fazer:')
+    print('1_ Area do triangulo.')
+    print('2_ Area do quadrado.')
+    print('3_ Valor de PI.')
+    print()
+    resposta=input()    
+    
+    if resposta=='1':
+        numero=int(input('Digite o primeiro numero para ser feito a area o triangulo'))
+        numero1=int(input('Digite o segundo numero para ser feito a area o triangulo'))
+        
+        area=numero*numero1/2
+    
+        print('A area do triangulo é:', area)
+    
+    elif resposta=='2':
+        numero=int(input('Digite o numero para ser feito a area do quadrado.'))
+        area=numero**2
+        print('A area do quadrado é:', area)
+        
+    elif resposta=="3":
+        print('O valor de PI 3.14159265359...')
+        
+
+    continuar=input('Deseja fazer outra operção?')
+    if continuar !='s':
+        break
+ 
