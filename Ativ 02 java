@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Main2 {
+    public static void main(String[] args) {
+
+        int num4;
+        int num5;
+        int num6;
+        double med;
+
+        Scanner scanner2 = new Scanner(System.in);
+        System.out.println("Digite as notas do aluno para ser feito a  medía: ");
+        num4 = scanner2.nextInt();
+        System.out.println("Digite a outro nota do aluno: ");
+        num5 = scanner2.nextInt();
+        System.out.println("Digite a ultima nota do aluno: ");
+        num6 = scanner2.nextInt();
+        med = (num4 + num5 + num6) / 3;
+        System.out.println("A medía desses numeros foi: " + med);
+            if (med >= 7) {
+                System.out.println("O aluno foi aprovado");
+            if (med <= 7) {
+                System.out.println("O aluno foi reprovado");
+            }
+            }
+    }
+}
