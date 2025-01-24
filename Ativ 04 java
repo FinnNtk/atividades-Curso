@@ -1,0 +1,116 @@
+import java.util.Scanner;
+
+public class Atividaded2 {
+    public static void main(String[] args) {
+        //Atividade 01
+
+        double base;
+        double altura;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Digite o valor da base: ");
+        base = sc.nextDouble();
+        System.out.println("Digite o valor da altura: ");
+        altura = sc.nextDouble();
+        double area = (double) Math.round(base * altura) / 2;
+        System.out.println("O valor da area é: " + area);
+
+        //Atividade 02
+
+        double cateto01;
+        double cateto02;
+
+        Scanner sc1 = new Scanner(System.in);
+        System.out.println("Digite o primeiro valor do cateto para hipotenusa ");
+        cateto01 = sc1.nextDouble();
+        System.out.println("Digite o segundo valor do cateto");
+        cateto02 = sc1.nextDouble();
+        double hipotenusa=Math.round(Math.sqrt(Math.pow(cateto01,2)+Math.pow(cateto02,2)));
+        System.out.println("O valor da hipotenusa é: " + hipotenusa);
+
+
+
+        //Atividade 03
+
+        Scanner sc2 = new Scanner(System.in);
+        System.out.println("Digite valor do raio para se calcular o volume da esfera: ");
+        double raio=sc2.nextDouble();
+        double volume=(4*Math.PI*Math.pow(raio,3))/3;
+        System.out.println("O valor do volume é:" + volume);
+
+        //Atividade 04
+
+        Scanner sc3 = new Scanner(System.in);
+        System.out.println("Insire o valor da coordenada x e da coordenada y do primeiro ponto: ");
+        double x = sc3.nextDouble();
+        double y = sc3.nextDouble();
+
+        //lista de coordenada do primito ponto
+
+        System.out.println("insire o valor da coordenada x e da coordenada y do segundo ponto: ");
+        double x2 = sc3.nextDouble();
+        double y2 = sc3.nextDouble();
+
+        //lista de coordenada do segundo ponto
+
+        double distancia =Math.sqrt(Math.pow(x2- x, 2)+ Math.pow(y2-y,2)) ;
+        System.out.println("A distancia entre os dois ponto é:" + distancia);
+
+        //Atividade 05
+
+        double min=1;
+        double max=100;
+        int aloatorio= (int) (Math.random()*(max-min+1)+min);
+        System.out.println(aloatorio);
+
+        //Atividade06
+
+        Scanner sc4 = new Scanner(System.in);
+        System.out.println("Digite um valor: ");
+        int numero1=sc4.nextInt();
+        System.out.println("Digite um outro valor: ");
+        int numero2=sc4.nextInt();
+        int diferenca=Math.abs(numero1-numero2);
+        System.out.println("O Valor absoluto de "+numero1+ " e "+numero2+" = "+diferenca);
+
+        //Atividade07
+
+        Scanner sc5 = new Scanner(System.in);
+        System.out.println("Digite um valor da base menor do trapezio: ");
+        double baseMenor=sc5.nextDouble();
+        System.out.println("Digite o valor da base maior do trapezio: ");
+        double baseMaior=sc5.nextDouble();
+        System.out.println("Digite o valor da altura do trapezio: ");
+        double alturaTrapezio = sc5.nextDouble();
+        double areaTrapezio=(baseMaior+baseMenor)*(alturaTrapezio)/2;
+        System.out.println("O valor da area do trapezio é: "+areaTrapezio);
+
+        //Atividade08
+
+        Scanner sc6 = new Scanner(System.in);
+        System.out.println("Digite o raio do cilindro: ");
+        double raioCindro=sc6.nextDouble();
+        System.out.println("Digite o altura do cilindro: ");
+        double alturaCilindro=sc6.nextDouble();
+        double areaCilindro=2*Math.PI*raioCindro*(raioCindro+alturaCilindro);
+        System.out.println("A area do cilindro é: "+areaCilindro);
+
+        //Atividade09
+
+        Scanner sc7 = new Scanner(System.in);
+        System.out.println("Digite o valor da variavel X: ");
+        double X=sc7.nextDouble();
+        System.out.println("Digite o valor da variavel Y: ");
+        double Y=sc7.nextDouble();
+        double expressao=Math.pow(X,2)+(3*Y)/2;
+        System.out.println("O valor da espressao x²+3y/2 é igual a "+expressao);
+
+        //Atividade10
+
+        Scanner sc8 = new Scanner(System.in);
+        System.out.println("Digite o valor em graus para fazer a conversão em radiano: ");
+        double grau=sc8.nextDouble();
+        double radiano=grau*Math.PI/180;
+        System.out.println("O valor em radiano é: "+radiano);
+    }
+}
