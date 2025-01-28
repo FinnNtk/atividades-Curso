@@ -9,7 +9,8 @@ public class Atividade03 {
         int num = sc.nextInt();
         if (num % 2 == 0) {
             System.out.println("O numero é par.");
-        } else {
+        }
+        else {
             System.out.println("O numero é impar.");}
 
         //Atividade 02
@@ -19,9 +20,11 @@ public class Atividade03 {
         double num1 = sc1.nextInt();
         if (num1 >0) {
             System.out.println("O numero é positivo.");
-        }else if (num1<0) {
+        }
+        else if (num1<0) {
             System.out.println("O numero é negativo.");
-        }else {
+        }
+        else {
             System.out.println("O numero e é zero.");}
 
         //Atividade 03
@@ -33,7 +36,8 @@ public class Atividade03 {
         int num3 = sc2.nextInt();
         if (num2>num3) {
             System.out.println("O numero maior é: "+num2);
-        }else if (num2<num3) {
+        }
+        else if (num2<num3) {
             System.out.println("O numero maior é: "+num3);}
 
         //Atividade 04
@@ -43,7 +47,8 @@ public class Atividade03 {
         float notaCarlo = sc3.nextFloat();
         if (notaCarlo>7) {
             System.out.println("Parabens vc foi aprovado!!!!");
-        }else{
+        }
+        else{
             System.out.println("Parabens vc foi reprovado!!!!");}
 
         //Atividade 05
@@ -57,7 +62,8 @@ public class Atividade03 {
         float lado3 = sc4.nextFloat();
         if (lado1 + lado2 > lado3 || lado2+lado3>lado1 || lado1+lado3>lado2) {
             System.out.println("È um triangulo");
-        }else {
+        }
+        else {
             System.out.println("N é um triangulo.");}
 
         //Atividade 06
@@ -72,13 +78,16 @@ public class Atividade03 {
         if (operacao == '+') {
             double soma = primeiroNumero + segundoNumero;
             System.out.println("A soma de "+primeiroNumero+" e "+segundoNumero+soma);
-        }else if (operacao == '-') {
+        }
+        else if (operacao == '-') {
             double subtracao = primeiroNumero - segundoNumero;
             System.out.println("A subtração de "+primeiroNumero+" e "+segundoNumero+" = "+subtracao);
-        }else if (operacao == '*') {
+        }
+        else if (operacao == '*') {
             double multiplicacao = primeiroNumero * segundoNumero;
             System.out.println("A multiplicação de "+primeiroNumero+" e "+segundoNumero+" = "+multiplicacao);
-        }else if (operacao == '/') {
+        }
+        else if (operacao == '/') {
             double divisao = primeiroNumero / segundoNumero;
             System.out.println("A divisão de "+primeiroNumero+" e "+segundoNumero+" = "+divisao);
         }
@@ -90,17 +99,23 @@ public class Atividade03 {
         float numero1 = sc6.nextFloat();
         if (numero1==1) {
             System.out.println("O numero corresponde a Segunda-feira");
-        }else if (numero1==2) {
+        }
+        else if (numero1==2) {
             System.out.println("O numero corresponde a Tercea-feira");
-        }else if (numero1==3) {
+        }
+        else if (numero1==3) {
             System.out.println("O numero corresponde a Quarta-feira");
-        }else if (numero1==4) {
+        }
+        else if (numero1==4) {
             System.out.println("O numero corresponde a Quinta-feira");
-        }else if (numero1==5) {
+        }
+        else if (numero1==5) {
             System.out.println("O numero corresponde a Sexta-feira");
-        }else if (numero1==6) {
+        }
+        else if (numero1==6) {
             System.out.println("O numero corresponde ao Sabado");
-        }else if (numero1==7) {
+        }
+        else if (numero1==7) {
             System.out.println("O numero corresponde ao Domingo");
         }
 
@@ -111,26 +126,37 @@ public class Atividade03 {
         float numero2 = sc7.nextFloat();
         if (numero2==1) {
             System.out.println("O numero corresponde ao mês de Janeiro.");
-        }else if (numero2==2) {
+        }
+        else if (numero2==2) {
             System.out.println("O numero corresponde ao mês de Fevereiro.");
-        }else if (numero2==3) {
+        }
+        else if (numero2==3) {
             System.out.println("O numero corresponde ao mês de Março.");
-        }else if (numero2==4) {
+        }
+        else if (numero2==4) {
             System.out.println("O numero corresponde ao mês de Abril.");
-        }else if (numero2==5) {
+        }
+        else if (numero2==5) {
             System.out.println("O numero corresponde ao mês de Maio.");
-        }else if (numero2==6) {
+        }
+        else if (numero2==6) {
             System.out.println("O numero corresponde ao mês de Junho.");
-        }else if (numero2==7) {
+        }
+        else if (numero2==7) {
             System.out.println("O numero corresponde ao mês de Julho.");
-        }else if (numero2==8) {
+        }
+        else if (numero2==8) {
             System.out.println("O numero corresponde ao mês de Agosto.");
-        }else if (numero2==9) {
+        }
+        else if (numero2==9) {
             System.out.println("O numero corresponde ao mês de Setembro.");
-        }else if (numero2==10) {
+        }
+        else if (numero2==10) {
             System.out.println("O numero corresponde ao mês de Outubro.");
-        }else if (numero2==11) {
+        }
+        else if (numero2==11) {
             System.out.println("O numero corresponde ao mês de Novembro.");
+        
         }else if (numero2==12) {
             System.out.println("O numero corresponde ao mês de Dezembro.");
         }
@@ -167,15 +193,18 @@ public class Atividade03 {
             System.out.println("Peso: " + peso);
             System.out.println("Altura: "+ altura);
             System.out.println("Voce esta magro, irmão você quer cesta basioca, ta so a capa do batman.");
-        }else if (imc>=18.6 && imc<=25) {
+        }
+        else if (imc>=18.6 && imc<=25) {
             System.out.println("Peso: "+ peso);
             System.out.println("Altura: "+altura);
             System.out.println("Seu peso é normal, um saudavel graças a deus.");
-        }else if (imc>=25 && imc<=29.9) {
+        }
+        else if (imc>=25 && imc<=29.9) {
             System.out.println("Peso: "+ peso);
             System.out.println("Altura: "+altura);
             System.out.println("Você esta sobrepeso, ta foda ai ne vamo comer menos.");
-        }else if (imc>=29.9) {
+        }
+        else if (imc>=29.9) {
             System.out.println("Peso: "+ peso);
             System.out.println("Altura: "+altura);
             System.out.println("Você esta obeso, vamos emagrecer queridão!!!");
