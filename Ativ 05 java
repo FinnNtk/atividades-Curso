@@ -1,0 +1,186 @@
+import java.util.Scanner;
+public class Atividade03 {
+    public static void main(String[] args) {
+
+        //Atividade 01
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Digite um numero: ");
+        int num = sc.nextInt();
+        if (num % 2 == 0) {
+            System.out.println("O numero é par.");
+        } else {
+            System.out.println("O numero é impar.");}
+
+        //Atividade 02
+
+        Scanner sc1 = new Scanner(System.in);
+        System.out.println("Digite um numero: ");
+        double num1 = sc1.nextInt();
+        if (num1 >0) {
+            System.out.println("O numero é positivo.");
+        }else if (num1<0) {
+            System.out.println("O numero é negativo.");
+        }else {
+            System.out.println("O numero e é zero.");}
+
+        //Atividade 03
+
+        Scanner sc2 = new Scanner(System.in);
+        System.out.println("Digite um numero: ");
+        int num2 = sc2.nextInt();
+        System.out.println("Digite outro numero: ");
+        int num3 = sc2.nextInt();
+        if (num2>num3) {
+            System.out.println("O numero maior é: "+num2);
+        }else if (num2<num3) {
+            System.out.println("O numero maior é: "+num3);}
+
+        //Atividade 04
+
+        Scanner sc3 = new Scanner(System.in);
+        System.out.println("Digite a nota do aluno Carlos: ");
+        float notaCarlo = sc3.nextFloat();
+        if (notaCarlo>7) {
+            System.out.println("Parabens vc foi aprovado!!!!");
+        }else{
+            System.out.println("Parabens vc foi reprovado!!!!");}
+
+        //Atividade 05
+
+        Scanner sc4 = new Scanner(System.in);
+        System.out.println("Digite o primero lado da figura geometriaca: ");
+        float lado1 = sc4.nextFloat();
+        System.out.println("Digite o segundo lado da figura geometriaca: ");
+        float lado2 = sc4.nextFloat();
+        System.out.println("Digite o terceiro lado da figura geometriaca: ");
+        float lado3 = sc4.nextFloat();
+        if (lado1 + lado2 > lado3 || lado2+lado3>lado1 || lado1+lado3>lado2) {
+            System.out.println("È um triangulo");
+        }else {
+            System.out.println("N é um triangulo.");}
+
+        //Atividade 06
+
+        Scanner sc5 = new Scanner(System.in);
+        System.out.println("Digite o primeiro numero;");
+        float primeiroNumero = sc5.nextFloat();
+        System.out.println("Digite o segundo numero;");
+        float segundoNumero = sc5.nextFloat();
+        System.out.println("Qual operação numerica você deseja usar,+,-,/ ou * : ");
+        char operacao = sc5.next().charAt(0);
+        if (operacao == '+') {
+            double soma = primeiroNumero + segundoNumero;
+            System.out.println("A soma de "+primeiroNumero+" e "+segundoNumero+soma);
+        }else if (operacao == '-') {
+            double subtracao = primeiroNumero - segundoNumero;
+            System.out.println("A subtração de "+primeiroNumero+" e "+segundoNumero+" = "+subtracao);
+        }else if (operacao == '*') {
+            double multiplicacao = primeiroNumero * segundoNumero;
+            System.out.println("A multiplicação de "+primeiroNumero+" e "+segundoNumero+" = "+multiplicacao);
+        }else if (operacao == '/') {
+            double divisao = primeiroNumero / segundoNumero;
+            System.out.println("A divisão de "+primeiroNumero+" e "+segundoNumero+" = "+divisao);
+        }
+
+        //Atividade 07
+
+        Scanner sc6 = new Scanner(System.in);
+        System.out.println("Digite um de 1 a 7;");
+        float numero1 = sc6.nextFloat();
+        if (numero1==1) {
+            System.out.println("O numero corresponde a Segunda-feira");
+        }else if (numero1==2) {
+            System.out.println("O numero corresponde a Tercea-feira");
+        }else if (numero1==3) {
+            System.out.println("O numero corresponde a Quarta-feira");
+        }else if (numero1==4) {
+            System.out.println("O numero corresponde a Quinta-feira");
+        }else if (numero1==5) {
+            System.out.println("O numero corresponde a Sexta-feira");
+        }else if (numero1==6) {
+            System.out.println("O numero corresponde ao Sabado");
+        }else if (numero1==7) {
+            System.out.println("O numero corresponde ao Domingo");
+        }
+
+        //Atividade 08
+
+        Scanner sc7 = new Scanner(System.in);
+        System.out.println("Digite um numero de 1 a 12: ");
+        float numero2 = sc7.nextFloat();
+        if (numero2==1) {
+            System.out.println("O numero corresponde ao mês de Janeiro.");
+        }else if (numero2==2) {
+            System.out.println("O numero corresponde ao mês de Fevereiro.");
+        }else if (numero2==3) {
+            System.out.println("O numero corresponde ao mês de Março.");
+        }else if (numero2==4) {
+            System.out.println("O numero corresponde ao mês de Abril.");
+        }else if (numero2==5) {
+            System.out.println("O numero corresponde ao mês de Maio.");
+        }else if (numero2==6) {
+            System.out.println("O numero corresponde ao mês de Junho.");
+        }else if (numero2==7) {
+            System.out.println("O numero corresponde ao mês de Julho.");
+        }else if (numero2==8) {
+            System.out.println("O numero corresponde ao mês de Agosto.");
+        }else if (numero2==9) {
+            System.out.println("O numero corresponde ao mês de Setembro.");
+        }else if (numero2==10) {
+            System.out.println("O numero corresponde ao mês de Outubro.");
+        }else if (numero2==11) {
+            System.out.println("O numero corresponde ao mês de Novembro.");
+        }else if (numero2==12) {
+            System.out.println("O numero corresponde ao mês de Dezembro.");
+        }
+
+        //Ativiadade 09
+
+        Scanner sc8 = new Scanner(System.in);
+        System.out.println("Digite o primero lado de um triangulo: ");
+        float t1 = sc8.nextFloat();
+        System.out.println("Digite o segundo lado de um triangulo: ");
+        float t2 = sc8.nextFloat();
+        System.out.println("Digite o terceiro lado de um triangulo: ");
+        float t3 = sc8.nextFloat();
+        if (t1==t2 && t1==t3) {
+            System.out.println("O triangulo é um triagulo equilatero.");
+        }
+        else if (t1==t2 && t2!=t3 && t1!=t3||t2==t3 && t1!=t2 && t1!=t3||t3==t2 && t2!=t3 && t3!=t1||t1==t3 ) {
+            System.out.println("O triangulo é um triangulo isóceles.");
+        }
+        else if (t1!=t2 && t2!=t3 && t3!=t1) {
+            System.out.println("O triangulo é um tirangulo escaleno.");
+        }
+
+        //Ativade 10
+
+        Scanner sc9 = new Scanner(System.in);
+        System.out.println("Digite seu peso: ");
+        float peso = sc9.nextFloat();
+        System.out.println("Digite sua altura: ");
+        float altura = sc9.nextFloat();
+        double imc = peso/(Math.pow(altura,2));
+
+        if (imc <18.5) {
+            System.out.println("Peso: " + peso);
+            System.out.println("Altura: "+ altura);
+            System.out.println("Voce esta magro, irmão você quer cesta basioca, ta so a capa do batman.");
+        }else if (imc>=18.6 && imc<=25) {
+            System.out.println("Peso: "+ peso);
+            System.out.println("Altura: "+altura);
+            System.out.println("Seu peso é normal, um saudavel graças a deus.");
+        }else if (imc>=25 && imc<=29.9) {
+            System.out.println("Peso: "+ peso);
+            System.out.println("Altura: "+altura);
+            System.out.println("Você esta sobrepeso, ta foda ai ne vamo comer menos.");
+        }else if (imc>=29.9) {
+            System.out.println("Peso: "+ peso);
+            System.out.println("Altura: "+altura);
+            System.out.println("Você esta obeso, vamos emagrecer queridão!!!");
+        }
+
+    }
+
+}
