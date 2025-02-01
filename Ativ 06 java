@@ -1,0 +1,379 @@
+import java.util.Scanner;
+        //Atividade 01
+class AtividadeFor {
+    public static void main(String[] args) {
+        // Cria um objeto Scanner para ler a entrada do usuário.
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Digite um numero : "); //Solicita  o usuario um numero.
+
+        //ler um numero que o usuario der.
+        int num = sc.nextInt();
+
+        //Define um valor para comtrole de contagem.
+        int num2 = 0;
+
+        System.out.println("\n");
+
+        //O loop vai de 1  ate o numero  que o usuario informar.
+        while (num2 < num) {
+            num2++;
+            System.out.println(num2);
+        }
+    }
+}
+
+        //Aitividade 02
+
+class Calculo {
+        public static void main(String[] args) {
+            // Cria um objeto Scanner para ler a entrada do usuário.
+
+            Scanner sc2 = new Scanner(System.in);
+            System.out.println("Digite um numero : "); //Solicita o usuario um numero
+
+            //ler um numero inserido pelo usuario.
+            int num3 = sc2.nextInt();
+
+            // Variável que vai acumular a soma dos números
+            int soma = 0;
+
+            // Loop para somar os números de 0 até o número informado
+            for (int numero2 = 0;
+                numero2 <= num3; numero2++) {
+
+                soma += numero2;       // Adiciona o valor de numero2 à soma
+
+                System.out.println(numero2);         // Exibe o número atual
+            }
+            // Exibe o resultado da soma total
+            System.out.println(soma);
+        }
+    }
+
+        //Atividade 03
+
+class Fibonacci {
+    public static void main(String[] args) {
+        // Cria um objeto Scanner para ler a entrada do usuário
+        Scanner sc3 = new Scanner(System.in);
+
+        // Solicita ao usuário o número de termos da sequência de Fibonacci
+        System.out.println("Digite um numero para fazer a sequenciam de Fibonacci : ");
+
+        // Lê o número de termos desejados
+        int num4 = sc3.nextInt();
+
+        // Inicializa os dois primeiros termos da sequência
+        int i = 1, fistTerm = 0, secondTerm = 1;
+
+        // Loop para gerar e exibir a sequência de Fibonacci
+        do {
+
+            // Imprime o primeiro termo da sequência
+            System.out.print(fistTerm + ",");
+
+            // Calcula o próximo termo da sequência
+            int nextTerm = fistTerm + secondTerm;
+
+            // Atualiza os termos da sequência
+            fistTerm = secondTerm;
+            secondTerm = nextTerm;
+
+            // Incrementa o contador para a próxima iteração
+            i++;
+
+            // O loop continuará até que o número de termos gerados seja igual ao número solicitado pelo usuário
+        }
+
+        // A condição de parada é quando i for maior que o número de termos desejados
+        while (i <= num4);
+    }
+}
+
+        //Atividade 03 refeita  para a maneira deseja no exercicios
+
+class Fibonacci2 {
+    public static void main(String[] args) {
+        // Cria um objeto Scanner para ler a entrada do usuário
+        Scanner sc2 = new Scanner(System.in);
+
+        int n;
+
+    System.out.println("Digite a quantidade de valores que deseja: ");
+
+    // Lê o número de termos desejados na sequência de Fibonacci
+    n = sc2.nextInt();
+
+    int a=0,b=1;    // Inicializa os primeiros dois termos da sequência
+
+    // Mensagem de erro se o número for negativo
+    if(n<0){
+        System.out.println("Por favor, digite um numero positivo.");
+    }
+
+    else {
+        System.out.println("Sequencia de Fibonacci ate " + n + ": ");
+    }
+
+    // Gera e exibe os termos da sequência de Fibonacci
+    do {
+        System.out.print(a+" ");
+
+        // Calcula o próximo termo
+
+        int next = a+b;     // Calcula o próximo termo
+        a = b;  // Atualiza o primeiro termo
+        b = next;   // Atualiza o segundo termo
+    }
+
+    // Continua até que o valor de `a` seja maior que `n`
+    while (a <= n);
+
+    }
+}
+
+        //Atividade 04
+class Primo {
+    public static void main(String[] args) {
+
+        // Cria um objeto Scanner para ler a entrada do usuário
+        Scanner sc4 = new Scanner(System.in);
+        System.out.println("Digite um numero, para saber se é primo  ou não: ");
+
+        // Lê o número informado pelo usuário
+        int nume = sc4.nextInt();
+        int contador;
+
+        // Inicializa a contagem de divisores
+        int divisores = 0;
+
+        // Verifica os divisores do número
+        for (contador = 1; contador <= nume; contador++) {
+            if (nume % contador == 0) {
+                divisores++;
+                // Incrementa o contador de divisores
+            }
+        }
+        // Se o número tiver exatamente dois divisores (1 e ele mesmo), é primo
+        if (divisores == 2) {
+            System.out.println("O numero e primo");
+        } else {
+            System.out.println("O numero não e primo");
+        }
+    }
+}
+
+        //Atividade 05
+
+class Divisores {
+        public static void main(String[] args) {
+        // Cria um objeto Scanner para ler a entrada do usuário
+        Scanner sc5 = new Scanner(System.in);
+        System.out.println("Digite um numero para que seja imprimida todos os seus divisores: ");
+
+        // Lê o número informado pelo usuário
+        int num5 = sc5.nextInt();
+
+        // Inicializa o contador de divisores
+        int dive = 1;
+
+        // Loop para verificar e imprimir todos os divisores do número
+        while(dive <=num5)
+
+        {
+            if (num5 % dive == 0) {
+                // Exibe o divisor
+                System.out.println("O seus divisores são: " + dive);
+            }
+            // Incrementa o contador
+            dive++;
+        }
+    }
+}
+
+        //Atividade 06
+
+class RaizQuadrada {
+    public static void main(String[] args) {
+        // Cria um objeto Scanner para ler a entrada do usuário
+        Scanner sc6 = new Scanner(System.in);
+        System.out.print("Digite um numero para ser calculado a sua raiz quadrada: ");
+
+        // Lê o número informado pelo usuário
+        double num6 = sc6.nextInt();
+
+        // Metodo de aproximaçao
+        double x = num6 / 2; // Valor inicial de x
+        double precisao = 0.00001;  // Definindo a precisão desejada
+
+        while (true) {
+            double x_novo = (x + num6 / x) / 2;  // Calcula um novo valor para x
+            if (Math.abs(x_novo - x) < precisao) { // Verifica se a precisão foi atingida
+                break; // Sai do loop se a precisão for alcançada
+            }
+            x = x_novo; // Atualiza o valor de x
+        }
+        System.out.print("A raiz quadrada de " + num6 + " é " + x);
+    }
+}
+
+        //Atividade 07
+
+class SequenciaDeNumeros {
+    public static void main(String[] args) {
+        //Atividade 07
+
+        // Declaração de variáveis
+        int NumErro;    // Variável para armazenar os números inteiros informados pelo usuário
+        int suma = 0;   // Variável para armazenar a soma dos números
+        int contadoor = 0;   // Contador de números informados
+        double media;   // Variável para armazenar a média dos números
+
+        // Laço while que continua até o usuário informar um número negativo
+        while (true) {
+            // Solicita que o usuário informe um número inteiro positivo
+            System.out.println("Informe numeros inteiros positivos: ");
+
+            // Lê o número informado pelo usuário
+            NumErro = new Scanner(System.in).nextInt();
+
+            // Se o número for maior ou igual a zero, continua o processamento
+
+            if (NumErro >= 0) {
+
+                // Adiciona o número à soma total
+                suma += NumErro;
+                contadoor++;
+
+            }
+            // Incrementa o contador de números informados
+            else {
+
+                // Se o número for negativo, sai do laço
+                break;
+            }
+        }
+
+        // Calcula a média dos números informados
+        media = (double) suma / contadoor;
+
+        // Exibe a média dos números
+        System.out.println("A media dos numeros é: " + media);
+    }
+}
+
+        //Atividade 08
+
+class Exercicio08 {
+    public static void main(String[] args) {
+        // Cria um objeto Scanner para ler a entrada do usuário
+
+        Scanner sc5 = new Scanner(System.in);
+        String resposta= "sim";  // Resposta para a repetição do processo
+
+        // Laço do-while que continua enquanto o usuário desejar fazer outra operação
+        do {
+            // Solicita os dois números a serem usados na operação
+            System.out.println("Digite o primeiro numero;");
+            float primeiroNumero = sc5.nextFloat();
+            System.out.println("Digite o segundo numero;");
+            float segundoNumero = sc5.nextFloat();
+
+            // Solicita que o usuário escolha a operação a ser realizada
+            System.out.println("Qual operação numerica você deseja usar,+,-,/ ou * : ");
+
+            // Dependendo da operação escolhida, o programa realiza o cálculo
+            char operacao = sc5.next().charAt(0);
+            if (operacao == '+') {
+                //Realiza a soma
+                double sum = primeiroNumero + segundoNumero;
+                System.out.println("A soma de " + primeiroNumero + " e " + segundoNumero +" = "+ sum);
+            } else if (operacao == '-') {
+                //realiza a subtração
+                double subtracao = primeiroNumero - segundoNumero;
+                System.out.println("A subtração de " + primeiroNumero + " e " + segundoNumero + " = " + subtracao);
+            } else if (operacao == '*') {
+                //Realiza a multiplicação
+                double multiplicacao = primeiroNumero * segundoNumero;
+                System.out.println("A multiplicação de " + primeiroNumero + " e " + segundoNumero + " = " + multiplicacao);
+            } else if (operacao == '/') {
+                //Realiza a divisão
+                double divisao = primeiroNumero / segundoNumero;
+                System.out.println("A divisão de " + primeiroNumero + " e " + segundoNumero + " = " + divisao);
+            }
+
+            // Pergunta ao usuário se ele deseja realizar outra operação
+            System.out.println("\n Você dejesa fazer outra operação ? ");
+            resposta=sc5.next();
+        }
+
+        // O loop continuará enquanto o usuário digitar "sim" (ou algo equivalente)
+        while(resposta.equalsIgnoreCase("s"));
+    }
+}
+
+        //Atividade 09
+
+class Piramide {
+    public static void main(String[] args) {
+        // Cria um objeto Scanner para ler a entrada do usuário
+        Scanner sc6 = new Scanner(System.in);
+
+        // Solicita ao usuário o número de linhas para a pirâmide
+        System.out.println("Digite um numero: ");
+
+        //Le o numero digitado
+        int num = sc6.nextInt();
+
+        // Laço externo para controlar o número de linhas da pirâmide
+        for (int contador = 1; contador <= num; contador++) {
+
+            // Laço interno para imprimir o número de asteriscos em cada linha
+            for (int contador2 = 1; contador2 <= contador; contador2++) {
+                System.out.print("*");  // Imprime um asterisco
+
+            }
+            // Quebra de linha após cada linha da pirâmide
+            System.out.println();
+        }
+    }
+}
+
+        //Atividade 10
+
+class PiramideNumeros{
+    public static void main(String[] args) {
+        // Cria um objeto Scanner para ler a entrada do usuário
+        Scanner sc5 = new Scanner(System.in);
+
+        // Solicita ao usuário um número para a pirâmide
+        System.out.println("Digite um numero: ");
+
+        //le o numero digitado
+        int num = sc5.nextInt();
+
+        // Converte o número em uma string para determinar a largura do número
+        String numeroString= String.valueOf(num);
+
+        // Largura do número
+        int laguraNum= numeroString.length();
+
+        // Laço externo para controlar o número de linhas da pirâmide
+        for (int contador = 1; contador <= num; contador++) {
+
+            // Laço interno para imprimir espaços à esquerda (formato piramidal)
+            for (int contador2 = 1; contador2 <=(num-contador)*laguraNum; contador2++) {
+                System.out.print(" ");  // Imprime um espaço em branco
+            }
+
+            // Laço interno para imprimir o número repetidamente
+            for (int contador3 = 1; contador3 <= (2*contador-1); contador3++) {
+                System.out.printf("%" + laguraNum + "d", num);  // Imprime o número formatado, ajustando a largura para o número
+            }
+            // Quebra de linha após cada linha da pirâmide
+            System.out.println();
+        }
+
+    }
+}
