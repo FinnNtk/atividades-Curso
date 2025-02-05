@@ -69,44 +69,69 @@ class DiaDaSemana {
 class MenuDeOpiçoes{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        ArrayList<String> nomes = new ArrayList<>();
-        System.out.println("Bem vindo ao site, por favor digite a ação que deseja ser feita: ");
-        System.out.println("1-Cadastras cliente:");
-        System.out.println("2-Consulta cliente:");
-        System.out.println("3-Excluir cliente:");
-        System.out.println("4-Sair:");
-        int escolha = sc.nextInt();
-        switch (escolha) {
-            case 1:
-                System.out.println("Digite o nome do cliente: ");
-                String[] nomeCliente = new String[3];
-                for (int i = 0; i < nomeCliente.length; i++) {
-                    nomeCliente[i] = sc.next();
-                }
-                System.out.println("Digite o sexo do cliente: ");
-                String sexo = sc.next();
-                System.out.println("Digite o idade do cliente: ");
-                int idade = sc.nextInt();
-                System.out.println("O cliente " + nomeCliente + " foi cadastrado com sucesso!");
-                break;
-            case 2:
-                System.out.println("Digite o nome do cliente: ");
-                String[] nomeCliente2 = new String[3];
-                for (int i = 0; i < nomeCliente2.length; i++) {
-                    System.out.println("Nome " + (i + 1) + ": " + nomeCliente2[i]);
-                }
-                System.out.println(": ");
+        ArrayList<String> usuarios = new ArrayList<String>();
+        char resposta='s';
+        do {
+            System.out.println("Seja bem vindo a nossa loja escolha um numero em nosso menu de opções:");
+            System.out.println("1- Cadastrar cliete.");
+            System.out.println("2- Exibir a lista de cliete.");
+            System.out.println("3- Consultar cliete.");
+            System.out.println("4- Excluir cliete.");
+            System.out.println("5- Sair.");
+            System.out.println();
+            System.out.println("escolha uma opção:");
+            int escolha = sc.nextInt();
 
-
-
-        }
+            switch (escolha) {
+                case 1:
+                    System.out.println("Cadrastar: ");
+                    System.out.println("Usuário: ");
+                    String usuario = sc.next();
+                    System.out.println("Senha: ");
+                    String senha = sc.next();
+                    usuarios.add(usuario);
+                    System.out.println("Obrigado por se cadastrar");
+                    break;
+                case 2:
+                    System.out.println("Digite o nome do cliente: ");
+                    for (String cliente : usuarios) {
+                        System.out.println(cliente);
+                    }
+                    break;
+                case 3:
+                    System.out.println("Consultar cliete: ");
+                    System.out.println("Nome: ");
+                    String usuario2 = sc.next();
+                    if (usuarios.contains(usuario2)) {
+                        System.out.println("Esse usuario é um cliente de extrema importancia");
+                    } else {
+                        System.out.println("Usuario não encontrado");
+                    }
+                    break;
+                case 4:
+                    System.out.println("Excluir cliete: ");
+                    System.out.println("Usuario: ");
+                    String usuario3 = sc.next();
+                    usuarios.remove(usuario3);
+                    System.out.println("Cliente excluido com sucesso");
+                    break;
+                case 5:
+                    System.out.println("Volta sempre");
+                    break;
+                default:
+                    System.out.println("Infome um numero valido seu animal");
+                    break;
+            }
+            System.out.println("deseja continuar (s/n)?  ");
+            resposta = sc.next().charAt(0);
+        }while (resposta=='s');
     }
 }
 
-class Idade {
+class ClassificçãoDeIdade{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Digite a sua idade: ");
+        System.out.println("Digite sua idade: ");
         int idade = sc.nextInt();
         int faxetaria=0;
         if (idade <=11) {
@@ -312,7 +337,7 @@ class Aleatorio {
         int min = 1, max = 100;
         int randomnum = (int) (Math.random() * (max - min + 1)) + min;
         int palpite;
-        int resultado=0;
+        int resultado = 0;
         do {
             System.out.println("Digite seu palpite: ");
             palpite = sc.nextInt();
@@ -334,6 +359,8 @@ class Aleatorio {
                     System.out.println("Caraca você acertou.\n");
                     break;
             }
-        } while (palpite!=randomnum);
+        }
+        while (palpite != randomnum);
+
     }
 }
